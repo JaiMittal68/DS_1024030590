@@ -9,6 +9,6 @@ Each lab task is solved in a separate file and regularly uploaded here as per th
 
 ## 👨‍💻 Author
 
-**Name:** Ojasvi Jain
-**Roll No:** 1024030577
+**Name:** Jai Mittal
+**Roll No:** 1024030590
 **Batch:** 2C43
