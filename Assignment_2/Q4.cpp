@@ -31,7 +31,7 @@ string removeVowels(const string &s)
     for (int i = 0; i < s.length(); i++)
     {
         char c = s[i];
-        char lower = (c >= 'A' && c <= 'Z') ? (c + 32) : c; // convert to lowercase manually
+        char lower = (c >= 'A' && c <= 'Z') ? (c + 32) : c;
         if (!(lower == 'a' || lower == 'e' || lower == 'i' || lower == 'o' || lower == 'u'))
         {
             result += c;
@@ -60,9 +60,9 @@ char toLowerCase(char c)
 {
     if (c >= 'A' && c <= 'Z')
     {
-        return c + 32; // ASCII trick: 'A' (65) + 32 = 'a' (97)
+        return c + 32;
     }
-    return c; // already lowercase or non-alphabet
+    return c;
 }
 
 int main()
