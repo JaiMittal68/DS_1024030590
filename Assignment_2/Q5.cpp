@@ -48,31 +48,27 @@ void displayUpper(int arr[], int n)
     }
 }
 
-void displaySymmetric(int arr[], int n)
-{
+void displaySymmetric(int arr[], int n) {
+    int mat[100][100];
     int k = 0;
-    int *mat = new int[n * n];
 
-    for (int i = 0; i < n; i++)
-    {
-        for (int j = 0; j <= i; j++)
-        {
-            mat[i * n + j] = arr[k++];
-            mat[j * n + i] = mat[i * n + j];
+
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j <= i; j++) {
+            mat[i][j] = arr[k];
+            mat[j][i] = arr[k];
+            k++;
         }
     }
 
-    for (int i = 0; i < n; i++)
-    {
-        for (int j = 0; j < n; j++)
-        {
-            cout << mat[i * n + j] << " ";
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < n; j++) {
+            cout << mat[i][j] << " ";
         }
-        cout << "\n";
+        cout << endl;
     }
-
-    delete[] mat;
 }
+
 
 void displayTriDiagonal(int arr[], int n)
 {
